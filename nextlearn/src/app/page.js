@@ -1,18 +1,15 @@
 'use client'
-import Link from "next/link";
-import styles from "./page.module.css";
-export default function Home() {
+import {useRouter} from 'next/navigation';
 
-  const Innercomp=()=>{
-    return(
-      <h1>Inner Component</h1>
-    )
-  }
+export default function Home() {
+  const route=useRouter();
   return (
     <main >
     <h1>Uisng Link and Navigation in Routing</h1>
-    <Link href={'/login'}>Login Page</Link><br/><br/>
-    <Link href={'/about'}>About Page</Link>
+    <button onClick={()=>{route.push('/login')}}>Login</button>
+    <br />
+    <br />
+    <button onClick={()=>{route.push('/about')}}>About</button>
     </main>
   );
 }
