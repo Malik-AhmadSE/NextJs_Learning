@@ -1,22 +1,18 @@
 'use client'
+import Link from "next/link";
 import styles from "./page.module.css";
-import {useState} from 'react';
 export default function Home() {
-  const [Name,setname]=useState('Ahmad');
-  const name=()=>{
-   setname('Ali')
-  }
+
   const Innercomp=()=>{
     return(
       <h1>Inner Component</h1>
     )
   }
   return (
-    <main className={styles.main}>
-    <h1>Events, function and state {Name}</h1>
-    <button onClick={name}>Click Me </button>
-    <Innercomp />
-    {Innercomp()}
+    <main >
+    <h1>Uisng Link and Navigation in Routing</h1>
+    <Link href={'/login'}>Login Page</Link><br/><br/>
+    <Link href={'/about'}>About Page</Link>
     </main>
   );
 }
