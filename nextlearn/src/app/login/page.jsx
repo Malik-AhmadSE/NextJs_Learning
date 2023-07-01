@@ -6,6 +6,7 @@ export default function page() {
     <div>
       <h1>Login Function</h1>
       <button onClick={()=>{route.push('/')}}>Home page</button>
+      <button onClick={()=>{route.push('/login/loginsuccess')}}>Login success</button>
     </div>
   )
 }

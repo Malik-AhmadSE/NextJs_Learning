@@ -6,6 +6,7 @@ export default function page() {
     <div>
       <h1>About Page</h1>
       <button onClick={()=>{route.push('/')}}>Home page</button>
+      <button onClick={()=>{route.push('/about/aboutme')}}>About Me</button>
     </div>
   )
 }

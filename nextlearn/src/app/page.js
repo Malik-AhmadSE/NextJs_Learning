@@ -8,7 +8,7 @@ export default function Home() {
   }
   return (
     <main >
-    <h1>Uisng Link and Navigation in Routing</h1>
+    <h1>Nested Routing</h1>
     <button onClick={()=>{navigate('/login')}}>Login</button>
     <br />
     <br />
