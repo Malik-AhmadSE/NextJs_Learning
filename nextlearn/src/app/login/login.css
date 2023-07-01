@@ -1,0 +1,19 @@
+.main-layout{
+    display: flex;
+   
+}
+.main-layout li {
+    
+    margin-left: 25px;
+    list-style-type: none;
+}
+.main-layout li a{
+    text-decoration: none;
+}
+.main-layout li h4{
+    margin:0;
+}
+.heading{
+    text-align: center;
+    color:blue;
+}
