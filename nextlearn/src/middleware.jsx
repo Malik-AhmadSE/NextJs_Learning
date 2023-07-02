@@ -5,5 +5,6 @@ export default function middleware(request) {
 }
 
 export const config={
-    matcher:'/about',
+    matcher:['/about','/'],
+    // if multipage then use array matcher:['/about','/login'],
 };
