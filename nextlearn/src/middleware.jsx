@@ -5,6 +5,6 @@ export default function middleware(request) {
 }
 
 export const config={
-    matcher:['/about','/'],
-    // if multipage then use array matcher:['/about','/login'],
+    // restrict parent with child pages 
+    matcher:"/about/:path*",
 };
